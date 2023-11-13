@@ -1,0 +1,600 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contact
+{
+    background-color: #161735;
+    display: flex;
+    padding: 20px 42px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.contact
+{
+    display: flex;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.contact  a
+{
+    color: #ffa200;
+    text-decoration: none;
+}
+
+.contact .icon
+{
+    color: #bbbbbb;
+    margin-right: 8px;
+}
+
+.contact a:hover 
+{
+    text-decoration:underline;
+}
+
+
+#header
+{
+    background-color: #161735;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    /* height: 150px; */
+    position: sticky;
+    top: 0px;
+}
+
+#header .logo img
+{
+    width: 320px;
+    padding-left: 42px;
+}
+
+@keyframes ShowHeader {
+    from
+    {
+        transform: translateY(-100%);
+    }
+    to 
+    {
+        transform: translateY(0%);
+    }  
+}
+
+.sticky 
+{
+    animation: ShowHeader 0.7s ease !important;
+}
+
+
+
+.sticky .logo img
+{
+    width: 200px !important;
+    padding: 10px;
+}
+
+
+.header 
+{
+    margin-right: 20px
+}
+
+.header.header__nav
+{
+    flex: 1;
+}
+.header.header__nav .btn
+{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    margin-right: 50px;
+}
+
+.header.header__nav .btn > li
+{
+    margin: 0 20px;
+    padding-bottom: 10px;
+    transform: translateY(10px);
+}
+
+.header.header__nav .btn > li > a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.header.header__nav .btn > li > a:hover 
+{
+    color: #ffa200;
+}
+
+.header.header__search
+{
+    font-size: 20px;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.header.header__language i
+{
+    color: #ffa200;
+    cursor: pointer;
+}
+
+.header.header__register
+{
+    background-color: #0089f7;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.header.header__register:hover 
+{
+    animation: change 1s ease-in-out forwards;
+}
+
+@keyframes change
+{
+    from
+    {
+        opacity: 1;
+    }
+    to 
+    {
+        opacity: 0.8;
+    }
+}
+
+.btn .TechcityCloud
+{
+    position: relative;
+}
+
+.btn .TechcityCloud:hover .subnav
+{
+    display: block;
+}
+
+.btn .Akamai
+{
+    position: relative;
+}
+
+.btn .Akamai:hover .subnav
+{
+    display: block;
+}
+
+.btn .AkamaiDocument
+{
+    position: relative;
+}
+
+.btn .AkamaiDocument:hover .subnav
+{
+    display: block;
+}
+
+.header .subnav
+{
+    background-color: white;
+    position: absolute;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    transform: translateY(10px);
+}
+
+.header .subnav li
+{
+    width: 200px;
+    display: flex;
+}
+.header .subnav li a
+{
+    padding: 15px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    flex: 1;
+    color: #656262;
+}
+
+.header .subnav li + li 
+{
+    border-top: #bbbbbb 0.5px solid;
+}
+
+
+.header .subnav li a:hover 
+{
+    background-color: #cccccc;
+}
+
+.header.header__language
+{
+    position: relative;
+    padding-bottom: 10px;
+    transform: translateY(5px);
+}
+
+.header.header__language .subimg a
+{
+    position: absolute;
+    display: none;
+    padding: 10px 20px;
+    transform: translateX(-30px);
+}
+
+.header.header__language .icon:hover a
+{
+    display: block;
+}
+
+#title
+{
+    background-color: #161735;
+    text-align: center;
+    height: 100px;
+}
+.title 
+{
+    font-weight: 700;
+    color: white;
+    font-size: 50px;
+}
+
+.navinfor
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0 250px 0 250px;
+}
+
+.navinfor li
+{
+    display: flex;
+}
+
+.navinfor li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 30px 0;
+    font-weight: 600;
+}
+
+.navinfor li a:hover 
+{
+    color: #ffa200;
+}
+
+#slider
+{
+    background-image: url(https://www.akamai.com/site/en/images/hero-images/app-and-api-hero-image.png);
+    background-size: cover    ;
+    height: 25vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* margin-right: 70px; */
+}
+
+.slider__infor
+{
+    margin-left: 240px;
+}
+
+.slider__infor .title
+{
+    padding-bottom: 15px;
+}
+
+.slider__infor .btn__FreeTrial
+{
+    padding: 10px 24px;
+    background-color: #5cb85c;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.slider__infor .btn__FreeTrial:hover
+{
+    opacity: 0.8;
+}
+
+.input__search
+{
+    width: 600px;
+    align-items: center;
+    border-radius: 5px;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    display: none;
+}
+
+.input__search .icon{
+    padding: 0 10px;
+}
+
+.input__search .cin
+{
+    padding: 22px 0;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.close
+{
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 10px;
+    animation: Close 0.7s  forwards;
+}
+
+@keyframes OffShow {
+    from {
+        opacity: 1;
+        top: 170px;
+    }
+    to{
+        opacity: 0;
+        top: 0;
+    }
+}
+
+.Close
+{
+    animation: OffShow 0.7s ease-out forwards !important;
+}
+
+.Show
+{
+    display: flex;
+    animation: OnShow 0.7s ease-out;
+}
+
+@keyframes OnShow {
+    from{
+        opacity: 0;
+        top: 0;
+    }
+    to {
+        opacity: 1;
+        top: 170px;
+    }
+}
+
+
+.colum
+{
+    display: flex;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.row > *
+{
+    flex: 1;
+}
+
+.colum > *
+{
+    flex: 1;
+}
+
+#content
+{
+    margin: 80px 200px 0 200px;
+}
+
+#content .content__title
+{
+    flex: 1;
+    padding-right: 10px;
+}
+
+#content .content__paragraph
+{
+    flex: 2;
+    color: #6f6f6f;
+    height: 476px;
+}
+
+#content .title
+{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    height: 476px;
+}
+
+.No2
+{
+    transform: translateY(-50px);
+}
+
+.video
+{
+    display: flex;
+    justify-content: center;
+}
+
+#btn_sol
+{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_sol
+{
+    background-color:#5bc0de;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.security
+{
+    text-align: center;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.security.title
+{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+.security__container
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.security__box
+{
+    display: flex;
+    border: 1px black solid;
+    margin-top: 10px !important;
+    background-color: #F4F5F4;
+    animation: ShowBoxSecurity 1s ease;
+}
+
+.ShowBoxSecurity
+{
+    display: flex;
+    animation: ShowBoxSecurity 1s ease;
+}
+
+@keyframes ShowBoxSecurity
+{
+    from
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to 
+    {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.security__box.box2
+{
+    margin: 0 30px;
+}
+
+.security__box .heading
+{
+    margin: 15px 30px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.security__box .paragraph
+{
+    margin: 0 20px;
+}
+
+#slider_report
+{
+    background-color: #161735;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+    background-image: url(https://www.akamai.com/site/en/images/section-background/2023/brand-protector-background-image.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 30px 0;
+}
+#slider_report > *
+{
+    flex: 0 !important;
+}
+#slider_report .image 
+{
+    width: 37%;
+    flex: 1;
+    margin-left: 200px;
+}
+#slider_report .widget
+{
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+#slider_report .widget > *
+{
+    flex: 0;
+}
+
+#slider_report .widget .title
+{
+    font-size: 32px;
+    width: 520px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+#slider_report .widget .paragraph
+{
+    color: white;
+    width: 520px;
+}
+
+#slider_report .widget .download
+{
+    padding: 10px 15px;
+    background-color: #5bc0de;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+}
+
+
+
